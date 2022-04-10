@@ -1,43 +1,53 @@
 /**
  * Components
  */
-import Head from 'next/head';
-import React, {useRef} from 'react';
+import Head from "next/head";
+import React, { useRef } from "react";
 
 /**
  * Styles
  */
-import containerStyles from '../assets/styles/modules/container.module.scss'
+import containerStyles from "../assets/styles/modules/container.module.scss";
 
 /**
  * Sections
  */
-import Header from '../components/sections/header';
-import About from '../components/sections/about';
-import Sliders from '../components/sections/sliders';
-import Projects from '../components/sections/projects';
-import Connect from '../components/sections/connect';
+import Header from "../components/sections/header";
+import About from "../components/sections/about";
+import Sliders from "../components/sections/sliders";
+import Projects from "../components/sections/projects";
+import Connect from "../components/sections/connect";
 import MobileSliders from "../components/sections/mobileSliders";
 
 export default function Home() {
-
-  const aboutRef = useRef(null)
-  const projectRef = useRef(null)
-  const connectRef = useRef(null)
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const connectRef = useRef(null);
 
   const scrollToRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth'});
-  }
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className={containerStyles.container}>
       <Head>
-        <title>Andreas Beuger</title>
+        <title>Shruti Singh</title>
         <link rel="icon" href="/favicon.ico" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"true"} />
-          <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet" />
-          <meta property="og:description" content="Portfolio / experimental site" key="description" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={"true"}
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap"
+          rel="stylesheet"
+        />
+        <meta
+          property="og:description"
+          content="Portfolio / experimental site"
+          key="description"
+        />
       </Head>
       <Header
         aboutClick={() => scrollToRef(aboutRef)}
@@ -52,5 +62,5 @@ export default function Home() {
         <Connect refProp={connectRef} />
       </main>
     </div>
-  )
+  );
 }
