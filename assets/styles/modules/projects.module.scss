@@ -1,0 +1,72 @@
+@import "../variables";
+
+.projects {
+  max-width: 1250px;
+  margin: 5rem 0 0 0;
+
+  @media only screen and (min-width: 992px) {
+    width: 100vw;
+    margin: 15rem 0 0 0;
+  }
+
+  h2 {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+
+    @media only screen and (min-width: 992px) {
+      text-align: left;
+    }
+  }
+}
+
+.feed {
+  display: flex;
+  padding: 2rem;
+  gap: 8rem;
+  flex-direction: column;
+
+  @media only screen and (min-width: 992px) {
+    padding: 5rem 0;
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  h3 {
+    font-family: 'Baloo Thambi 2', cursive;
+
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  p {
+    line-height: 1.2;
+    font-size: 1rem;
+    color: rgba(0,0,0, 0.6);
+    margin: 0;
+  }
+
+  div {
+    flex-basis: 100%;
+
+    div {
+      font-size: 0.8rem;
+      flex-basis: unset;
+      color: $purple;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 0;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
