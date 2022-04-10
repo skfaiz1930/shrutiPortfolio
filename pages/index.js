@@ -32,7 +32,6 @@ export default function Home() {
     <div className={containerStyles.container}>
       <Head>
         <title>Shruti Singh</title>
-        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
