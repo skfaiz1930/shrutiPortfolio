@@ -32,6 +32,7 @@ export default function Home() {
     <div className={containerStyles.container}>
       <Head>
         <title>Shruti Singh</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -42,11 +43,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap"
           rel="stylesheet"
         />
-        <meta
-          property="og:description"
-          content="Portfolio / experimental site"
-          key="description"
-        />
+        <meta property="og:description" content="Portfolio" key="description" />
       </Head>
       <Header
         aboutClick={() => scrollToRef(aboutRef)}

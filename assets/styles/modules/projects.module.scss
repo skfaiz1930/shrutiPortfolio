@@ -6,11 +6,11 @@
 
   @media only screen and (min-width: 992px) {
     width: 100vw;
-    margin: 15rem 0 0 0;
+    // margin: 15rem 0 0 0;
   }
 
   h2 {
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: "Baloo Thambi 2", cursive;
     text-align: center;
 
     @media only screen and (min-width: 992px) {
@@ -26,13 +26,13 @@
   flex-direction: column;
 
   @media only screen and (min-width: 992px) {
-    padding: 5rem 0;
+    padding:  0 0 5rem 0 ;
     gap: 5rem;
     flex-direction: row;
   }
 
   h3 {
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: "Baloo Thambi 2", cursive;
 
     margin-top: 2rem;
     font-size: 2rem;
@@ -41,7 +41,7 @@
   p {
     line-height: 1.2;
     font-size: 1rem;
-    color: rgba(0,0,0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     margin: 0;
   }
 

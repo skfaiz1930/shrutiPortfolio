@@ -14,7 +14,6 @@ import { Circle } from "@branch/neumorphism.ui.circle";
 
 import profile2 from "../../assets/images/profile2.jpg";
 import india from "../../assets/images/india.png";
-
 export default function About({ refProp }) {
   return (
     <section className={aboutStyles.sec}>
@@ -29,13 +28,12 @@ export default function About({ refProp }) {
             <Emoji label={"hi"} symbol={"👨‍💻"} />
           </div>
           <p>
-            I'm a web developer at{" "}
-            <a href={"https://caybon.com"} target={"_blank"}>
-              Caybon
-            </a>{" "}
-            where I also lead a small team of consultants.
+            I am a Web Developer and learning fullstack development currently
+            pursuing my MCA from MIT Pune University and looking for a good
+            opportunity. I have a diverse set of skills ranging from frontend to
+            backend. I have a passion for learning new technologies and building
+            things that make a difference.
           </p>
-          <p>Always loved frontend but got a fullstack toolbox.</p>
           <p className={aboutStyles.base}>
             Based in <img src={india.src} />
           </p>
